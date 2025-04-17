@@ -1,2 +1,2 @@
 # seanamcbride.github.io
-My Website
+My personal website. Info about the theme I crib will be here.
