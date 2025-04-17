@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <title> Accelerator Physics </title>
+    <link rel="stylesheet" href="subpage.css" type="text/css" media="screen">
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+  </head>
+<body>
+
+ <center> <h1> Photocathodes </h1> </center>
+ 
+ <p>
+ The bulk of my undergraduate laboratory life at Cornell was spent in the <a href="https://www.classe.cornell.edu/~ib38/">Bazarov lab</a>, working with <a href="https://scholar.google.com/citations?user=IiKkItoAAAAJ&hl=en">Luca Cultrera</a> and a multitude of collaborators on a variety of projects, as well as being a general wrench monkey when necessary.
+ </p>
+  <img class="resize100" src="mother2.jpg" ALIGN="center"> 
+ <h2> What is a Photocathode? </h2>
+ 
+ <p>
+ A variety of applications, ranging from accelerator physics to certain medical scans, require a highly collimated electron beam. These beams are produced via the photoelectric effect, by shining a light on a semiconductor surface which releases electrons. The materials studied in our lab were mainly alkali antimonides and related compounds, e.g. Na<sub>2</sub>KSb, Cs<sub>3</sub>Sb, and Cs<sub>2</sub>Te. These are semiconductors which emit electrons when illuminated with light in the visible spectrum. Alkali antimonides are unstable in the presence of air and water, and so must be grown, stored, and analyzed under ultra high vacuum (UHV), generally at or below 10<sup>-10</sup> Torr.
+ </p>
+ 
+ <p>
+ A good photocathode has a two important qualities: high quantum efficiency and low mean transverse energy. The quantum efficiency (QE) is a measure of how many photons are needed to excite an electron. The mean transverse energy (MTE) is a measure of the momentum spread of the electron beam, a quantity which is corrected for with bunchers and solenoids in the beamline but is important to get right at the material level. In general, it's difficult to simultaneously minimize MTE and maximize QE at visible wavelengths, so typically MTE would take precedence.
+ </p>
+ 
+ <h2> Facilities </h2>
+ <img class="resize40" src="lab1.png" ALIGN="right"> 
+ <p>
+ Our lab occupied roughly half of Newman Laboratory (including an office, according to Peter Lepage, where Ken Wilson came up with his theory of renormalization!). Some of our facilities included two growth chambers utilizing chemical vapor deposition (CVD), an Auger spectrometer, a Mott polarimeter, and a custom-made setup for measuring MTE (termed the TEMeter, pronounced "tee-ee-meter"). Future installments will include a cryogenically cooled TEMeter and a beamline with a 50 Watt (!) laser as a tunable IR to UV light source. The main growth and analysis chamber, pictured to the right in all its wiry glory, was termed the Mother chamber. Of course, photocathodes in an accelerator lab are no good if they can't be put into an accelerator, so a vacuum "suitcase" was used to transport samples from Newman lab to the beamline at CHESS in Wilson lab. 
+ </p>
+ <p>
+ Part of the day-to-day maintenance of a UHV chamber involves "baking" after opening. The two worst enemies of vacuum are oil and water. Oils, like those secreted from your fingertips, are difficult to remove without doing a deep cleanse with soap and alcohol, but they're not a problem with proper hygeine and use of nitrile or latex gloves. Water, on the other hand, immediately adsorbs to the metal surface upon contact with air and will outgas constantly if it's not taken care of. After a chamber is opened, it's sealed shut, wrapped in heat tape and a few layers of heavy duty tin foil (for heat distribution and insulation), and heated to around 150°C for a couple of days to vaporize any adsorbed water. Baking is the gruntiest of grunt work; you'll get cuts on your hands from the tin foil, bumps on your head from crawling under the chamber, and you'll struggle to avoid burning out improperly wrapped heat tapes. I enjoyed it immensely.
+ </p>
+ 
+ <h2> Optical Roughness Measurements </h2> 
+ <img class="resize50" src="roughness.png" ALIGN="right"> 
+ <p> 
+ One tool lacking from that list of devices is something to measure surface roughness, a vitally important element in creating a high brightness beam. Rough photocathodes mean high MTE at the surface, and thus an imperfect beam profile. It was therefore important to come up with a technique to noninvasively measure the roughness of the photocathodes. Due to a formula by Davies [<a href="#Davies">1</a>], and as summarized by Bennett and Porteus [<a href="#BenPor">2</a>], there is a precise relationship between RMS roughness \( \sigma \) and surface reflectivity given by $$\sigma = \frac{\lambda}{4 \pi \cos \theta} \sqrt{ - \ln \left( \frac{R}{R_0} \right)}$$ for wavelength \( \lambda \), angle of incidence \( \theta \), total reflectance \( R_0 \), and specular reflectance \( R \). With this relation, we were able to verify measurements of surface roughness taken with a profilometer with only a few lenses and a power meter.
+ <h2> The Baby </h2>
+ <img class="resize50" src="Complete Transporter Test-2.jpg" ALIGN="right">
+ <p>
+ While optical methods may have sufficed to get an estimate of surface roughness, nothing beats a real measurement. Through a collaboration with <a href="http://hines.chem.cornell.edu/">Melissa Hines</a> in the chemistry department, we got access to a scanning tunneling microscope (STM) in Baker Lab, which was inconveniently a parking lot away from Newman Labs where the cathodes were grown. To add to the complications, under normal operating circumstances, the STM would be opened under atmosphere, the sample would be inserted, and the system would be pumped down, a procedure which would compromise our photocathodes. We therefore had to design a vacuum "suitcase" to transport cathodes under UHV from Newman Lab to Baker Lab, along with a manipulator and gate valve system to get the sample inside under vacuum. It took a while to get the system working, due to a few unfortunate gate valve failures and difficult in creating a proper manipulator inside the vacuum, but we were eventually able to transfer and scan a sample of bright baby blue cesium telluride with the STM.
+ </p>
+  <img class="resize40" src="cste.jpg" ALIGN="right"> 
+ <h2> The Baby Mark II: The Toddler </h2>
+ <p>
+ The transfer system underwent a great deal of evolution in the 3-4 years of its construction. As part of the NSF-funded <a href="http://cbb.cornell.edu/">Center for Bright Beams (CBB)</a>, we also began collaborating with <a href="https://www.shengroup.lassp.cornell.edu/">Kyle Shen</a>, designing a universal sample holder that would allow us to take measurements with both STM and angle-resolved photoelectron spectroscopy (ARPES). This sample holder was based on the standard sample holder for the Omicron STM, but with an elevated platform for ARPES measurements. Prototypes were constructed out from stainless steel, but the final product was made of paramagnetic niobium. Eventually, this sample holder may be used to conduct experiments at other facilities such as Brookhaven National Lab, as well as for further collaboration with molecular beam epitaxy (MBE) fabrication groups at Cornell.
+</p>
+<h3 id="Davies"></h3>[1] H. Davies, "The Reflection of Electromagnetic Waves From a Rough Surface," <a href="http://dx.doi.org/10.1049/pi-4.1954.0025"><i>Proceedings of the IEE - Part IV: Institution Monographs</i> <b>101</b> no. 7, (August, 1954) 209-214.</a>
+  <h3 id="BenPor"></h3>[2] H. E. Bennett and J. O. Porteus, "Relation Between Surface Roughness and Specular Reflectance at Normal Incidence," <a href="http://dx.doi.org/10.1364/JOSA.51.000123"><i>J. Opt. Soc. Am.</i> <b>51</b> no. 2, (Feb, 1961) 123-129.</a>
+
+</body>
+</html>
